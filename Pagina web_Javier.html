@@ -106,6 +106,60 @@
                 font-size: 0.9em;
             }
         }
+
+            /* Estilos del formulario */
+        #contacto {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contacto h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        #contacto form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contacto label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        #contacto input,
+        #contacto textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        #contacto button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+        #contacto button:hover {
+            background-color: #555;
+        }
+
     </style>
 </head>
 <body>
@@ -149,6 +203,29 @@
         </ul>
         <p>Ofrecemos soluciones completas, desde el diseño de la campaña hasta su ejecución y análisis. Trabajamos con las últimas tendencias para que tu marca siempre esté a la vanguardia.</p>
     </section>
+
+    <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta o deseas trabajar con nosotros? Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    
 
     <!-- Pie de página -->
     <footer>
